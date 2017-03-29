@@ -7,13 +7,8 @@
       </tr>
       <tr ng-repeat="client in clients">
           <td>{{taction.id}}</td>
-          <td>{{taction.name}}</td>
-          <td>{{taction.tariff}}</td>
+          <td>{{taction.name}}</td> <!-- count of owner -->
           <td>{{taction.date}}</td>
-          <td>
-              <a class="btn btn-primary" ui-sref="viewClient({id:client.id})">View</a>
-              <a class="btn btn-danger"  ng-click="deleteClient(client)">Delete</a>
-          </td>
       </tr>
   </table>
 </div>

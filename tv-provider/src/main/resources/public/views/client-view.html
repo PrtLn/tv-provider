@@ -9,15 +9,20 @@
           <td>{{client.id}}</td>
       </tr>
       <tr>
-          <td>ID Owner</td>
-          <td>{{client.id}}</td>
+          <td>Name</td>
+          <td>{{client.name}}</td>
       </tr>
       <tr>
-          <td>Avalable Amount of Money</td>
+          <td>Tariff Plane</td>
+          <td>{{client.tariff}}</td>
+      </tr>
+      <tr>
+          <td>Amount of Money</td>
           <td>{{client.money}}</td>
       </tr>
   </table>
+  
   <div>
-      <a class="btn btn-primary" ui-sref="editClient({id:client.id})">Edit</a>
+      <a class="btn btn-primary" ui-sref="editClient({id:client.id})">Edit the tariff plan of the client</a>
   </div>
 </div>

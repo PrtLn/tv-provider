@@ -6,9 +6,9 @@
           <td></td>
       </tr>
       <tr ng-repeat="client in clients">
+          <td>{{client.id}}</td>
           <td>{{client.name}}</td>
-          <td>{{client.description}}</td>
-          <td>{{client.yearDiscovered}}</td>
+          <td>{{client.email}}</td>
           <td>
               <a class="btn btn-primary" ui-sref="viewClient({id:client.id})">View</a>
               <a class="btn btn-danger"  ng-click="deleteClient(client)">Delete</a>
